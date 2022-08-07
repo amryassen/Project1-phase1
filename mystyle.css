@@ -154,7 +154,7 @@ header {
   height: 22vw;
   width: 80vw;
   display: flex;
-  background-image: url(header-img.jpg);
+  background-image: url(./icons/header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -215,7 +215,7 @@ header {
     height: 22vw;
     width: 70vw;
     display: flex;
-    background-image: url(header-img.jpg);
+    background-image: url(./icons/header-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
