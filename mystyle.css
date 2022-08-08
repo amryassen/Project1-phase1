@@ -90,6 +90,7 @@ form {
   border: 1px solid black;
   font-weight: 900;
   margin-left: 0.8rem;
+  cursor: pointer;
 }
 .sign-up-btn {
   background: transparent;
@@ -98,6 +99,7 @@ form {
   font-weight: 900;
   background-color: black;
   color: white;
+  cursor: pointer;
   margin-left: 0.8rem;
 }
 .world-btn {
@@ -108,6 +110,7 @@ form {
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
   margin-left: 1.4rem;
 }
 .world-btn img {
@@ -147,33 +150,39 @@ header {
   align-items: center;
 }
 .whole-header-block {
+  width: 70vw;
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: -16px;
 }
 .image-div {
   height: 22vw;
-  width: 80vw;
+  width: 70vw;
   display: flex;
+
   background-image: url(./icons/header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  margin-top: -20px;
 }
-.checked {
-  color: orange;
-}
+
 .caption-div {
-  position: absolute;
-  background-color: white;
-  justify-content: center;
-  align-items: center;
   width: 35vw;
-  margin-left: 30px;
-  margin-bottom: 30px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: white;
+  margin-left: 0px;
+  margin-bottom: 10px;
   padding: 15px;
+  margin-left: 20px;
+  margin-bottom: 70px;
 }
+
 .intro {
   padding-top: 35px;
 }
@@ -199,7 +208,23 @@ header {
   padding: 8px;
   font-weight: bolder;
 }
-@media only screen and (max-width: 870px) {
+/*1677px*/
+@media only screen and (max-width: 1870px) {
+  .container-item {
+    flex-basis: 23%;
+  }
+}
+@media only screen and (max-width: 1248px) {
+  .container-item {
+    flex-basis: 31%;
+  }
+}
+@media only screen and (max-width: 969px) {
+  .container-item {
+    flex-basis: 48%;
+  }
+}
+@media only screen and (max-width: 858px) {
   .menu-btn {
     display: flex;
   }
@@ -210,6 +235,8 @@ header {
     width: 70vw;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
   }
   .image-div {
@@ -221,15 +248,14 @@ header {
     background-size: cover;
     background-position: center center;
   }
-  * {
-    box-sizing: border-box;
-  }
+
   .caption-div {
     position: relative;
-    width: 100%;
     justify-content: center;
     align-items: center;
-    margin-left: 30px;
+    display: flex;
+    width: 100%;
+    margin-left: 0px;
     margin-bottom: 10px;
     padding: 15px;
   }
@@ -258,7 +284,7 @@ header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 25px;
   /*
   font-size: 1vw;*/
 }
