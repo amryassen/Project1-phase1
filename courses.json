@@ -100,5 +100,115 @@
       "rating": 5.0,
       "people": "427,994"
     }
+  ],
+  "aws-res": [
+    {
+      "id": 1047846,
+      "title": "Amazon Web Services (AWS) Certified 2022 - 4 Certifications!",
+      "author": "Jose Portilla",
+      "image": "https://img-c.udemycdn.com/course/750x422/1047846_83ef_29.jpg",
+      "price": 29.99,
+      "rating": 4.0,
+      "people": "427,994"
+    },
+    {
+      "id": 1102458,
+      "title": "AWS Certified Security Specialty 2022",
+      "author": "Jose Morinio",
+      "image": "https://img-c.udemycdn.com/course/750x422/1102458_d6e6_2.jpg",
+      "price": 34.99,
+      "rating": 4.0,
+      "people": "150,994"
+    },
+    {
+      "id": 1135330,
+      "title": "Part 1: AWS Certified Solutions Architect SAA C03 [Updated]",
+      "author": "Chandra Lingam",
+      "image": "https://img-c.udemycdn.com/course/750x422/1135330_0e31_10.jpg",
+      "price": 14.99,
+      "rating": 4.0,
+      "people": "15,994"
+    },
+    {
+      "id": 1162310,
+      "title": "Practice Test AWS Solutions Architect Associate SAA C03",
+      "author": "Chandra Lingam",
+      "image": "https://img-c.udemycdn.com/course/750x422/1162310_5ee3_4.jpg",
+      "price": 14.99,
+      "rating": 5.0,
+      "people": "85,254"
+    },
+    {
+      "id": 1236626,
+      "title": "AWS Certified Solution Architect - Associate",
+      "author": "Alan Rodrigues",
+      "image": "https://img-c.udemycdn.com/course/750x422/1236626_b910_4.jpg",
+      "price": 16.99,
+      "rating": 1.0,
+      "people": "587,254"
+    },
+    {
+      "id": 1328072,
+      "title": "AWS Certified Solutions Architect - Associate 2022",
+      "author": "Zeal Vora",
+      "image": "https://img-c.udemycdn.com/course/750x422/1328072_e082_5.jpg",
+      "price": 29.99,
+      "rating": 4.615854,
+      "people": "186,456"
+    },
+    {
+      "id": 1343886,
+      "title": "AWS Certified Solutions Architect - Associate 2022",
+      "author": "Bernard Golden",
+      "image": "https://img-c.udemycdn.com/course/750x422/1343886_9003_3.jpg",
+      "price": 17.99,
+      "rating": 3.0,
+      "people": "534,456"
+    },
+    {
+      "id": 1360446,
+      "title": "AWS Certified Cloud Practitioner 2019",
+      "author": "Zeal Vora",
+      "image": "https://img-c.udemycdn.com/course/750x422/1360446_f69e.jpg",
+      "price": 19.99,
+      "rating": 4.0,
+      "people": "112,002"
+    },
+    {
+      "id": 1425762,
+      "title": "AWS Certified Solutions Architect - Professional 2022",
+      "author": "Zeal Vora",
+      "image": "https://img-c.udemycdn.com/course/750x422/1425762_36e3.jpg",
+      "price": 34.99,
+      "rating": 2.0,
+      "people": "122,342"
+    },
+    {
+      "id": 1477998,
+      "title": "AWS Certified Cloud Practitioner - Updated 2020",
+      "author": "Alan Rodrigues",
+      "image": "https://img-c.udemycdn.com/course/750x422/1477998_1fa5_3.jpg",
+      "price": 14.99,
+      "rating": 5.0,
+      "people": "26,000"
+    },
+    {
+      "id": 1581742,
+      "title": "AWS Certified Advanced Networking - Specialty 2022",
+      "author": "Zeal Vora",
+      "image": "https://img-c.udemycdn.com/course/750x422/1581742_5d24_3.jpg",
+      "price": 34.99,
+      "rating": 4.0,
+      "people": "221,000"
+    },
+    {
+      "id": 1717968,
+      "title": "AWS Certified Security Specialist",
+      "author": "Alan Rodrigues",
+      "image": "https://img-c.udemycdn.com/course/750x422/1717968_a945_4.jpg",
+      "price": 17.99,
+      "rating": 4.0,
+      "people": "642,266"
+    }
   ]
 }

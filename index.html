@@ -11,11 +11,17 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
 
     <title>udemy website</title>
   </head>
   <body>
-    <nav class="header">
+    <nav class="css-header">
       <a href="index.html">
         <img
           src="https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"
@@ -58,7 +64,7 @@
         />
       </a>
     </nav>
-    <section class="whole-body">
+    <section class="whole-body container">
       <header class="whole-header-block">
         <div class="image-div"></div>
         <div class="caption-div">
@@ -76,16 +82,160 @@
           every month
         </p>
       </section>
-      <section class="courses-buttons-div">
-        <button class="courses-button">Python</button>
-        <button class="courses-button">Excel</button>
-        <button class="courses-button">Web Development</button>
-        <button class="courses-button">JavaScript</button>
-        <button class="courses-button">Data Science</button>
-        <button class="courses-button">AWS Certificate</button>
-        <button class="courses-button">Drawing</button>
-      </section>
-      <section class="container">
+      <!-- Nav tabs -->
+      <ul class="nav" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button
+            class="courses-button"
+            id="Python-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Python-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="Python-tab-pane"
+            aria-selected="true"
+          >
+            Python
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="courses-button"
+            id="Excel-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Excel-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="Excel-tab-pane"
+            aria-selected="true"
+          >
+            Excel
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="courses-button"
+            id="Web-Development-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Web-Development-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="Web-Development-tab-pane"
+            aria-selected="false"
+          >
+            Web Development
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="courses-button"
+            id="JavaScript-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#JavaScript-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="JavaScript-tab-pane"
+            aria-selected="false"
+          >
+            JavaScript
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="courses-button"
+            id="Data-Science-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Data-Science-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="Data-Science-tab-pane"
+            aria-selected="false"
+          >
+            Data Science
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="courses-button"
+            id="AWS-Certificate-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#AWS-Certificate-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="AWS-Certificate-tab-pane"
+            aria-selected="false"
+          >
+            AWS Certificate
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button
+            class="courses-button"
+            id="Drawing-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#Drawing-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="Drawing-tab-pane"
+            aria-selected="false"
+          >
+            Drawing
+          </button>
+        </li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content" id="myTabContent">
+        <div
+          class="tab-pane fade show active"
+          id="Python-tab-pane"
+          role="tabpanel"
+          aria-labelledby="Python-tab"
+          tabindex="0"
+        ></div>
+        <div
+          class="tab-pane fade"
+          id="Excel-tab-pane"
+          role="tabpanel"
+          aria-labelledby="Excel-tab"
+          tabindex="0"
+        ></div>
+        <div
+          class="tab-pane fade"
+          id="Web-Development-tab-pane"
+          role="tabpanel"
+          aria-labelledby="Web-Development-tab"
+          tabindex="0"
+        ></div>
+        <div
+          class="tab-pane fade"
+          id="JavaScript-tab-pane"
+          role="tabpanel"
+          aria-labelledby="JavaScript-tab"
+          tabindex="0"
+        ></div>
+        <div
+          class="tab-pane fade"
+          id="Data-Science-tab-pane"
+          role="tabpanel"
+          aria-labelledby="Data-Science-tab"
+          tabindex="0"
+        ></div>
+        <div
+          class="tab-pane fade"
+          id="AWS-Certificate-tab-pane"
+          role="tabpanel"
+          aria-labelledby="AWS-Certificate-tab"
+          tabindex="0"
+        ></div>
+        <div
+          class="tab-pane fade"
+          id="Drawing-tab-pane"
+          role="tabpanel"
+          aria-labelledby="Drawing-tab"
+          tabindex="0"
+        ></div>
+      </div>
+      <section class="customContainer">
         <section class="container-paragraph">
           <h1>Expand your career opportunities with Python</h1>
           <p>
@@ -99,7 +249,114 @@
         </section>
         <section class="container-grid-div"></section>
       </section>
+
+      <!-- Cards Group-->
+      <br>
+      <h4 ><strong>Top Categories</strong></h4>
+      <div class="row-cols-3 row row-cols-md-4 row-cols-1">
+        <div class="col">
+          <a class="card">
+            <img
+              src="./categoriesImage/lohp-category-business-v2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><strong>Business</strong></h5>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card">
+            <img
+              src="./categoriesImage/lohp-category-design-v2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><strong>Design</strong></h5>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card">
+            <img
+              src="./categoriesImage/lohp-category-development-v2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><strong>Development</strong></h5>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card">
+            <img
+              src="./categoriesImage/lohp-category-it-and-software-v2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><strong>IT and Software</strong></h5>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card">
+            <img
+              src="./categoriesImage/lohp-category-marketing-v2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><strong>Marketing</strong></h5>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card">
+            <img
+              src="./categoriesImage/lohp-category-music-v2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><strong>Music</strong></h5>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card">
+            <img
+              src="./categoriesImage/lohp-category-personal-development-v2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><strong>Personal Development</strong></h5>
+            </div>
+          </a>
+        </div>
+        <div class="col">
+          <a class="card">
+            <img
+              src="./categoriesImage/lohp-category-photography-v2.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body">
+              <h5 class="card-title"><strong>Photography</strong></h5>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
     <script src="index.js"></script>
   </body>
 </html>
