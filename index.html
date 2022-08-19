@@ -11,10 +11,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <title>udemy website</title>
   </head>
   <body>
@@ -35,10 +32,11 @@
           type="text"
           class="search-text"
           placeholder="Search for anything"
+          name="input_txt"
         />
       </form>
-      <p><a href="index.html"> Udemy Business</a></p>
-      <p><a href="index.html"> Tech on Udemy</a></p>
+      <p id="udemy-business-btn"><a href="index.html"> Udemy Business</a></p>
+      <p id="tech-on-udemy-btn"><a href="index.html"> Tech on Udemy</a></p>
       <button class="cart">
         <img src="./icons/cart.webp" />
       </button>
@@ -61,16 +59,14 @@
       </a>
     </nav>
     <section class="whole-body">
-      <header>
-        <div class="whole-header-block">
-          <div class="image-div"></div>
-          <div class="caption-div">
-            <h1>New to Udemy? Lucky you.</h1>
-            <p>
-              Courses start at E169.99.Get your new-student offer before it
-              expires.
-            </p>
-          </div>
+      <header class="whole-header-block">
+        <div class="image-div"></div>
+        <div class="caption-div">
+          <h1>New to Udemy? Lucky you.</h1>
+          <p>
+            Courses start at E169.99.Get your new-student offer before it
+            expires.
+          </p>
         </div>
       </header>
       <section class="intro">
@@ -101,104 +97,9 @@
           </p>
           <button class="paragraph-button">Explore Python</button>
         </section>
-        <section class="container-grid-div">
-          <figure class="container-item">
-            <a href="">
-              <img src="./icons/cont1.jpg" class="conainer-img" alt="Trulli" />
-              <figcaption>
-                <h3>Learn Python: The Complete Python Programming Course</h3>
-              </figcaption>
-              <figcaption>Avinash Jain,The Codex</figcaption>
-              <figcaption>
-                <span class="checked">4.4</span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span>(2,845)</span>
-              </figcaption>
-              <figcaption><strong>E£679.99</strong></figcaption>
-            </a>
-          </figure>
-          <figure class="container-item">
-            <a href="">
-              <img src="./icons/cont2.jpg" class="conainer-img" alt="Trulli" />
-              <figcaption>
-                <h3>Learn Python for Data Analysis and Visualization</h3>
-              </figcaption>
-              <figcaption>Jose Portilla</figcaption>
-              <figcaption>
-                <span class="checked">4.4</span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span>(17.984)</span>
-              </figcaption>
-              <figcaption><strong>E£1.599.99</strong></figcaption>
-            </a>
-          </figure>
-          <figure class="container-item">
-            <a href="">
-              <img src="./icons/cont3.jpg" class="conainer-img" alt="Trulli" />
-              <figcaption>
-                <h3>Python for Beginners - Learn Programming from Scratch</h3>
-              </figcaption>
-              <figcaption>Edwin Diaz, Coding Faculty Solutions</figcaption>
-              <figcaption>
-                <span class="checked">4.4</span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span>(1,247)</span>
-              </figcaption>
-              <figcaption><strong>E£679.99</strong></figcaption>
-            </a>
-          </figure>
-          <figure class="container-item">
-            <a href="">
-              <img src="./icons/cont4.jpg" class="conainer-img" alt="Trulli" />
-              <figcaption>
-                <h3>Learn Python: Python For Begineers</h3>
-              </figcaption>
-              <figcaption>Abrar Hussain</figcaption>
-              <figcaption>
-                <span class="checked">4.3</span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span>(2,845)</span>
-              </figcaption>
-              <figcaption><strong>E£319.99</strong></figcaption>
-            </a>
-          </figure>
-          <figure class="container-item">
-            <a href="">
-              <img src="./icons/cont5.jpg" class="conainer-img" alt="Trulli" />
-              <figcaption>
-                <h3>Python Beyond the Basics Object-Oriented-Programming</h3>
-              </figcaption>
-              <figcaption>Infinite Skills</figcaption>
-              <figcaption>
-                <span class="checked">3.1</span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star checked"></span>
-                <span class="fa fa-star"></span>
-                <span class="fa fa-star"></span>
-                <span>(2,929)</span>
-              </figcaption>
-              <figcaption><strong>E£519.99</strong></figcaption>
-            </a>
-          </figure>
-        </section>
+        <section class="container-grid-div"></section>
       </section>
     </section>
+    <script src="index.js"></script>
   </body>
 </html>
