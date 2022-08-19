@@ -2,6 +2,13 @@
 const container = document.querySelector('.container-grid-div');
 const form = document.querySelector('form');
 let data;
+
+/**
+ *
+ * @param {*} i - users rating number
+ * @returns array of values checked or just empty string to use it to add a class checked to make a star color = orange.
+ * and empty string for not changing the color.
+ */
 let checkedOrNot = (i) => {
   let checked = {};
   let nmOfStart = Math.floor(Number(i.rating));
@@ -15,6 +22,13 @@ let checkedOrNot = (i) => {
   return checked;
 };
 
+/**
+ *
+ * @param {*} i json object
+ * @param {*} checked array of values checked or just empty string to use it to add a class checked to make a star color = orange.
+ * and empty string for not changing the color.
+ * @returns template to render the card into UI.
+ */
 let fillTemp = (i, checked) => {
   let str = '';
   str += `<figure class="container-item">
@@ -38,6 +52,9 @@ let fillTemp = (i, checked) => {
     </figure>`;
   return str;
 };
+/**
+ * @description - fetching the API and iteate over the json file to render it into DOM.
+ */
 const loadPosts = async () => {
   let uri = 'http://localhost:3000/python';
 
@@ -46,24 +63,27 @@ const loadPosts = async () => {
   data = jsonFile;
 
   let template = '';
-  for (i of jsonFile) {
+  jsonFile.forEach((i) => {
     let checked = checkedOrNot(i);
     template += fillTemp(i, checked);
-  }
+  });
   container.innerHTML = template;
 };
-
+/**
+ * @description - filtering posts depends on the input string in the search bar and rendering it.
+ * @param {*} e - event
+ */
 const postsFilter = async (e) => {
   e.preventDefault();
   let input = form.input_txt.value.trim().toLowerCase();
   let template = '';
-  for (i of data) {
+  data.forEach((i) => {
     const string = i.title.toLowerCase();
     if (string.includes(input)) {
       let checked = checkedOrNot(i);
       template += fillTemp(i, checked);
     }
-  }
+  });
   container.innerHTML = template;
 };
 

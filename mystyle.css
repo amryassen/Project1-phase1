@@ -216,6 +216,15 @@ form {
     flex-basis: 23% !important;
   }
 }
+@media only screen and (max-width: 1033px) {
+  #tech-on-udemy-btn {
+    display: none;
+  }
+  #udemy-business-btn {
+    display: none;
+    background-color: red;
+  }
+}
 /* TODO: add button elements */
 
 @media only screen and (max-width: 734px) {
